@@ -1,7 +1,7 @@
 import keyboard
 
-activated = False
+activated = True
 
-def desactivar(key) :
+def desactivate(key) :
     global activated
-    activated = not keyboard.is_pressed("w")
+    activated = not keyboard.is_pressed(key)

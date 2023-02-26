@@ -3,15 +3,15 @@ import pyautogui as pyt
 import winsound
 
 
-Apretado = False 
+pressed = False 
 
 def holdClick(key):
-    global Apretado
+    global pressed
     
     if keyboard.is_pressed(key):
-        Apretado = not Apretado
+        pressed = not pressed
         winsound.PlaySound('sample.wav', winsound.SND_FILENAME|winsound.SND_NOWAIT)    
-    if Apretado == True:
+    if pressed == True:
         pyt.mouseDown()
     else :
         pyt.mouseUp()
