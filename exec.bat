@@ -1,1 +1,1 @@
-py index.py
+py main.py
